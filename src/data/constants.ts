@@ -9,7 +9,7 @@ export enum SkillNames {
   WIRESHARK = "wireshark",
   OSINT = "osint",
   LINUX = "linux",
-  DOCKER = "docker",
+  SQLMAP = "sqlmap",
   GIT = "git",
   HTML = "html",
   CSS = "css",
@@ -106,13 +106,13 @@ export const SKILLS: Record<SkillNames, Skill> = {
     color: "#FCC624",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
   },
-  [SkillNames.DOCKER]: {
+  [SkillNames.SQLMAP]: {
     id: 10,
-    name: "docker",
-    label: "Docker",
-    shortDescription: "Contenedores para labs y ambientes de prueba",
-    color: "#2496ed",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    name: "sqlmap",
+    label: "SQLMap",
+    shortDescription: "Testing automático de inyecciones SQL",
+    color: "#FF3B3F",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
   },
   [SkillNames.GIT]: {
     id: 11,
