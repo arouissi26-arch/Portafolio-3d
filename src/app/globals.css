@@ -37,30 +37,33 @@ body {
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    /* Cyber theme - fondo oscuro pero visible */
+    --background: 220 30% 8%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 220 25% 12%;
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
+    --popover: 220 25% 12%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    /* Acentos en verde cyber */
+    --primary: 142 76% 45%;
+    --primary-foreground: 220 30% 8%;
+    --secondary: 220 20% 20%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 215 20% 65%;
+    /* Acento azul neón */
+    --accent: 200 100% 50%;
+    --accent-foreground: 220 30% 8%;
+    --destructive: 0 70% 50%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --border: 220 20% 25%;
+    --input: 220 20% 20%;
+    --ring: 142 76% 45%;
+    --chart-1: 142 76% 45%;
+    --chart-2: 200 100% 50%;
+    --chart-3: 270 70% 60%;
+    --chart-4: 340 75% 55%;
+    --chart-5: 30 80% 55%;
   }
 }
 
@@ -70,5 +73,36 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Cyber effects */
+@layer utilities {
+  .text-cyber-green {
+    color: #00ff41;
+  }
+
+  .text-cyber-blue {
+    color: #00d9ff;
+  }
+
+  .text-cyber-purple {
+    color: #b300ff;
+  }
+
+  .glow-green {
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  }
+
+  .glow-blue {
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+  }
+
+  .border-cyber {
+    border: 1px solid rgba(0, 255, 65, 0.3);
+  }
+
+  .bg-cyber-dark {
+    background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 100%);
   }
 }
